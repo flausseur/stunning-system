@@ -1,0 +1,95 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; /* để loại bỏ đường viền của các phần tử*/
+}
+.container{
+	max-width: 1200px;
+	margin: auto;
+}
+.product-items{
+	display: flex;
+	justify-content: space-between; /* để căn chỉnh các phần tử trong cùng một dòng */
+	background-color: #ddd;
+	padding: 12px;
+}
+.product-item{
+	width: 19%;
+	background-color: #fff;
+	padding: 12px;
+	text-align: center;
+}
+.product-items img{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.product-items text{ 
+	display: flex;/*để di chuyển các phần tử trong cùng một dòng*/
+	justify-content: space-between;/*để căn chỉnh các phần tử trong cùng một dòng*/
+}
+.product-items button{
+	margin: top 12px;/* để chỉnh số lượng phần tử trong cùng một dòng */
+	height: 30px;/*để chỉnh sửa chiều cao của button*/
+	padding: 0 12px;/* để chỉnh sửa khoảng cách giữa button và text*/
+	cursor: pointer;/* để làm cho điểm thực hiện con trỏ */
+	border: none;/* để loại bỏ đường viền của nút */
+	border-radius: 5px;/* để tạo bán kính đường viền của nút */
+	transition: all 0.3s ease-in-out;/* để thực hiện chuyển đổi của nút */
+}
+.product-items button:hover{ /* để chỉnh sửa khi nhấn vào nút */
+	background-color: tomato;/* để chỉnh sửa màu nền của nút khi di chuyển con trỏ */
+}
+.cart{
+	width: 50%;
+	margin: auto;
+	text-align: center;
+	padding-top: 30px;
+}
+.cart h2{
+	margin-bottom: 30px;
+}
+.cart table{
+	width: 100%;
+}
+.cart table thead tr th:first-child{
+	text-align: left;
+}
+.cart table tr td{
+	border-bottom: 1px solid #ddd;
+	padding: 12px 0;
+}
+.cart table tr td:last-child{
+	text-align: right;
+}
+.cart table tbody tr td:last-child{
+	text-align: right;
+}
+/*card*/
+.cart{
+	position:fixed;
+	height: 100vh;
+	width: 400px;
+	top: 0;
+	background-color: #fff;
+	padding: 12px 20px;
+	right: 0;
+	overflow-y: scroll;
+	right: -100%;
+	transition: all 0.3s ease-in-out;
+}
+.cart button{
+	margin-top: 12px;
+	height: 30px;
+	padding: 0 20px;
+	cursor: pointer;
+	border: none;
+	border-radius: 5px;
+	background-color: tomato;
+}
+.cart i{
+	cursor: pointer;
+	margin-bottom: 30px;
+}
+.cart-icon i{
+	cursor: pointer;
+}
